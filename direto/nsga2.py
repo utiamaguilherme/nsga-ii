@@ -86,6 +86,7 @@ def main():
             
             x_iteracao.sort()
             y_iteracao.sort()
+
             if primeira_execucao:
                 x_soma_execucoes = x_iteracao
                 y_soma_execucoes = y_iteracao
@@ -121,11 +122,7 @@ def main():
 
     for i in range(len(pontos_x)):
         grafico.grafico_risco_retorno(pontos_x[i], pontos_y[i], pareto_dos_riscos[i])   
-    # grafico.grafico_risco_retorno(pontos_x[0], pontos_y[0], "paretoFinalCVaR")
-    # grafico.grafico_risco_retorno(pontos_x[1], pontos_y[1], "paretoFinalVaR")
-    # grafico.grafico_risco_retorno(pontos_x[2], pontos_y[2], "paretoFinalEWMA")
-    # grafico.grafico_risco_retorno(pontos_x[3], pontos_y[3], "paretoFinalGARCH")
-    # grafico.grafico_risco_retorno(pontos_x[4], pontos_y[4], "paretoFinalLPM")
+    
     
 if __name__ == "__main__":
     main()
